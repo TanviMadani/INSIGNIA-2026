@@ -54,18 +54,17 @@ const Events = () => {
               </div>
               
               <div className="p-6 flex-1 relative z-10 flex flex-col min-h-0">
-                <div className="flex justify-between items-start mb-6">
+                <div className="flex justify-between items-start mb-4">
                    <div className="p-3 bg-slate-800/50 rounded-lg text-white group-hover:scale-110 transition-transform duration-300">
                      {event.icon}
                    </div>
                    <span className="font-mono text-xs text-[#F43F5E] uppercase border border-[#F43F5E]/30 px-2 py-1 rounded">
-                     {event.stat}
+                     {event.date}
                    </span>
                 </div>
                 
-                <h3 className="text-2xl font-black text-white uppercase italic mb-1">{event.title}</h3>
-                <p className="text-[#CCF381] font-mono text-xs mb-4">{event.subtitle}</p>
-                <p className="text-slate-400 text-sm leading-relaxed">{event.desc}</p>
+                <h3 className="text-2xl font-black text-white uppercase italic mb-2">{event.title}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-2">{event.shortDesc}</p>
                 
                 <div className="mt-auto pt-6 border-t border-slate-800/50 flex items-center gap-3">
                   <button className="flex-1 py-2.5 px-4 rounded-lg bg-[#F43F5E] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#F43F5E]/90 transition-colors">

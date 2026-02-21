@@ -51,32 +51,33 @@ const EventDetailsModal = ({ event, isOpen, onClose }) => {
                   {event.icon}
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
+                  <div className="flex items-center gap-3 mb-2 flex-wrap">
                     <h2 className="text-3xl font-black text-white uppercase italic">{event.title}</h2>
                     <span className="font-mono text-xs text-[#F43F5E] uppercase border border-[#F43F5E]/30 px-2 py-1 rounded">
-                      {event.stat}
+                      {event.date}
                     </span>
                   </div>
-                  <p className="text-[#CCF381] font-mono text-sm">{event.subtitle}</p>
+                  <p className="text-[#CCF381] font-mono text-sm">{event.shortDesc}</p>
                 </div>
               </div>
 
               {/* Description */}
               <div className="mb-8">
                 <h3 className="text-[#CCF381] font-bold uppercase text-sm tracking-widest mb-3">Description</h3>
-                <p className="text-slate-300 text-base leading-relaxed">{event.desc}</p>
+                <p className="text-slate-300 text-base leading-relaxed">{event.longDesc}</p>
               </div>
 
-              {/* Additional Details Section - can be expanded */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {/* Additional Details */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div>
-                  <h4 className="text-[#CCF381] font-bold uppercase text-xs tracking-widest mb-2">Format</h4>
-                  <p className="text-slate-400 text-sm">Competitive Event</p>
+                  <h4 className="text-[#CCF381] font-bold uppercase text-xs tracking-widest mb-2">Date</h4>
+                  <p className="text-slate-400 text-sm">{event.date}</p>
                 </div>
                 <div>
-                  <h4 className="text-[#CCF381] font-bold uppercase text-xs tracking-widest mb-2">Duration</h4>
-                  <p className="text-slate-400 text-sm">TBA</p>
+                  <h4 className="text-[#CCF381] font-bold uppercase text-xs tracking-widest mb-2">Time</h4>
+                  <p className="text-slate-400 text-sm">{event.time}</p>
                 </div>
+                
               </div>
 
               {/* Action Buttons */}
