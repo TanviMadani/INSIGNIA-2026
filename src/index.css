@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Fix fonts on mobile: prevent iOS Safari etc. from auto-resizing text */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
