@@ -3,13 +3,12 @@ import { ArrowRight } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 
 const SCHEDULE_ITEMS = [
-  { time: "09:00 AM", title: "Opening Ceremony", type: "Stadium" },
-  { time: "11:00 AM", title: "Codemania Heats", type: "Track" },
-  { time: "02:00 PM", title: "Repo Pitch", type: "Ring" },
-  { time: "04:00 PM", title: "Tech Bingo", type: "Track" },
-  { time: "06:00 PM", title: "Inquisitive Quiz", type: "Ring" },
-  { time: "08:00 PM", title: "Design Derby", type: "Track" },
-  { time: "10:00 PM", title: "CTF: Flags", type: "Ring" }
+  { time: "09:00 AM", title: "CodeMania", type: "Venue" },
+  { time: "11:00 AM", title: "Repo to Revenue", type: "Venue" },
+  { time: "02:00 PM", title: "Escape Room", type: "Venue" },
+  { time: "04:00 PM", title: "PoliTech Debate", type: "Venue" },
+  { time: "06:00 PM", title: "Insignia Bingo League", type: "Venue" },
+  { time: "08:00 PM", title: "Sports Trivia", type: "Venue" },
 ];
 
 const TRACK_COLORS = [

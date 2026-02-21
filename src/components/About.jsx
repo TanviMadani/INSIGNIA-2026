@@ -10,8 +10,12 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-7">
           <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light mb-8">
-            Insignia isn't just a tech fest. It is a <strong className="text-white">competitive sport</strong>. 
-            We've stripped away the boring conference vibes and replaced them with the adrenaline of a stadium finale.
+            Insignia isn’t just a tech fest. It’s a full-blown competitive arena.
+            We’ve swapped conference halls for colosseums, keynotes for kickoffs, and passive listening for pulse-racing action.
+            This year, ACES turns <strong className="text-white">innovation into a sport</strong>.
+            Every idea is a play. Every round is a match. Every participant is an athlete chasing the podium.
+            No spectators. No sidelines.
+            Just strategy, speed, and the thrill of the final whistle.
           </p>
         </div>
         

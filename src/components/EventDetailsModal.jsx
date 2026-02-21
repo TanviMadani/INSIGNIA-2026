@@ -18,20 +18,12 @@ const EventDetailsModal = ({ event, isOpen, onClose }) => {
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            className="bg-[#0F1522] border border-[#F43F5E]/30 rounded-2xl shadow-[0_0_50px_rgba(244,63,94,0.15)] max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+            className="bg-[#0F1522] border border-[#F43F5E]/30 rounded-2xl shadow-[0_0_50px_rgba(244,63,94,0.15)] max-w-2xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Decorative background elements */}
             <div className={`absolute top-0 right-0 w-64 h-64 bg-gradient-to-br ${event.color} opacity-5 rounded-full blur-3xl -mr-32 -mt-32`}></div>
             <div className={`absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-br ${event.color} opacity-5 rounded-full blur-3xl -ml-32 -mb-32`}></div>
-
-            {/* Close button */}
-            <button 
-              onClick={onClose}
-              className="absolute top-4 right-4 text-white/30 hover:text-white transition-colors p-2 z-10"
-            >
-              <X size={20} />
-            </button>
 
             {/* Poster */}
             {event.poster && (
@@ -44,7 +36,7 @@ const EventDetailsModal = ({ event, isOpen, onClose }) => {
               </div>
             )}
 
-            <div className="p-8 relative z-10">
+            <div className="p-8 relative z-10 min-w-0">
               {/* Header */}
               <div className="flex items-start gap-4 mb-6">
                 <div className={`p-4 bg-gradient-to-br ${event.color} rounded-lg text-white`}>
@@ -64,7 +56,7 @@ const EventDetailsModal = ({ event, isOpen, onClose }) => {
               {/* Description */}
               <div className="mb-8">
                 <h3 className="text-[#CCF381] font-bold uppercase text-sm tracking-widest mb-3">Description</h3>
-                <p className="text-slate-300 text-base leading-relaxed">{event.longDesc}</p>
+                <p className="text-slate-300 text-base leading-relaxed break-words">{event.longDesc}</p>
               </div>
 
               {/* Additional Details */}
