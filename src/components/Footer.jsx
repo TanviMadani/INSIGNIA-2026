@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin, Instagram, Trophy, Medal } from 'lucide-react';
 
 // 10. Footer
 const Footer = () => {
@@ -8,62 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#0B0F19] border-t border-[#1E293B] pt-20 pb-10">
-      {/* Podium section */}
-        <div className="max-w-6xl mx-auto px-4 md:px-8 mb-16 w-full">
-          <div className="flex justify-center items-end gap-4 mb-12">
-            {/* 2nd place */}
-            <motion.div
-              className="flex flex-col items-center"
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <span className="text-3xl mb-2">🥈</span>
-              <div className="w-20 md:w-28 h-20 bg-gradient-to-t from-[#C0C0C0]/40 to-[#C0C0C0]/20 rounded-t-lg flex items-center justify-center">
-                <span className="text-white/60 font-bold text-sm">2ND</span>
-              </div>
-            </motion.div>
-
-            {/* 1st place */}
-            <motion.div
-              className="flex flex-col items-center"
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <span className="text-4xl mb-2">🏆</span>
-              <div className="w-24 md:w-32 h-32 bg-gradient-to-t from-[#FFD700]/40 to-[#FFD700]/20 rounded-t-lg flex items-center justify-center">
-                <span className="text-[#FFD700] font-bold">1ST</span>
-              </div>
-            </motion.div>
-
-            {/* 3rd place */}
-            <motion.div
-              className="flex flex-col items-center"
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-            >
-              <span className="text-3xl mb-2">🥉</span>
-              <div className="w-20 md:w-28 h-16 bg-gradient-to-t from-[#CD7F32]/40 to-[#CD7F32]/20 rounded-t-lg flex items-center justify-center">
-                <span className="text-white/60 font-bold text-sm">3RD</span>
-              </div>
-            </motion.div>
-          </div>
-
-          <motion.p
-            className="text-center text-white/50 text-lg italic"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-          >
-            Will you stand on the podium?
-          </motion.p>
-        </div>
+      
       <div className="container mx-auto px-6 flex flex-col items-center">
         <div className="mb-10 p-4 bg-[#0F1522] rounded-full">
           <h2 className="font-black text-4xl text-[#F1F5F9] tracking-tighter">INSIGNIA<span className="text-[#F43F5E]"> 2026</span></h2>

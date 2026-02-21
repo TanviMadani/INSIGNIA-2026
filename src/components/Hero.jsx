@@ -1,5 +1,4 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { MousePointer2 } from 'lucide-react';
 import { THEME } from '../constants/theme';
 
 // 4. Hero Section
@@ -25,10 +24,10 @@ const Hero = () => {
           className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 border border-[#CCF381]/30 rounded-full bg-[#CCF381]/10 backdrop-blur-sm mb-4 md:mb-8"
         >
           <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-[#CCF381] animate-pulse" />
-          <span className="font-mono text-[#CCF381] text-[10px] md:text-xs tracking-widest uppercase">Live from the Arena</span>
+          <span className="font-mono text-[#CCF381] text-[10px] md:text-xs tracking-widest uppercase">Registrations are open now!</span>
         </motion.div>
 
-        <h1 className={`${THEME.fonts.display} text-[20vw] md:text-[15vw] leading-[0.8] text-white select-none`}>
+        <h1 className={`${THEME.fonts.display} text-[17vw] md:text-[14vw] leading-[0.8] text-white select-none`}>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -42,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex items-center justify-center gap-2 md:gap-4 text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-400 to-slate-600"
           >
-            <span className="text-[#F43F5E] text-[6vw] md:text-[5vw] align-top tracking-normal font-sans">20</span>
+            <span className="text-[#F43F5E] text-[10vw] md:text-[7vw] align-top tracking-normal font-sans">20</span>
             26
           </motion.div>
         </h1>
@@ -60,20 +59,18 @@ const Hero = () => {
 
       {/* Hero Interactive Elements */}
       <div className="absolute bottom-6 md:bottom-10 left-0 right-0 flex justify-between px-4 md:px-10 items-end">
-        <div className="hidden md:block font-mono text-xs text-slate-500 max-w-[200px]">
-          LOCATION: CENTRAL AUDITORIUM<br/>
-          COORDS: 23.0225° N, 72.5714° E
+        <div className="hidden md:block font-mono text-xs text-slate-400 max-w-[300px]">
+          LOCATION: Nirma University<br/>
+          COORDS: 23°07'44.9"N 72°32'40.7"E
         </div>
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
           className="mx-auto"
         >
-          <MousePointer2 className="text-white opacity-50 w-4 h-4 md:w-5 md:h-5" />
         </motion.div>
         <div className="hidden md:block font-mono text-xs text-slate-500 max-w-[200px] text-right">
           SCROLL TO EXPLORE<br/>
-          THE ARENA IS OPEN
         </div>
       </div>
     </section>
